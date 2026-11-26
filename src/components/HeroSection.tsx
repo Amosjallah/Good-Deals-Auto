@@ -109,6 +109,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           src={currentSlide.image}
           alt={currentSlide.imageAlt}
           referrerPolicy="no-referrer"
+          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover object-center scale-[1.02] transition-opacity duration-300"
         />
 

@@ -276,7 +276,8 @@ export const PopularCarsSection: React.FC<PopularCarsSectionProps> = ({
 
                     <img
                       src={car.image}
-                      alt={car.fullName}
+                      alt={`${car.fullName} ${car.bodyType} ${car.fuel} for sale and rent in Ghana`}
+                      loading="lazy"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-contain"
                     />

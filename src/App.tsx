@@ -18,13 +18,17 @@ import {
   InfoDrawerModal,
 } from './components/Modals';
 import { CARS_DATA, Car } from './data/carsData';
+import { SeoHead } from './components/SeoHead';
 
 export default function App() {
   const [activeNav, setActiveNav] = useState<NavTab>('home');
 
   // Search & Filter State
   const [headerBrand, setHeaderBrand] = useState('');
-  const [headerQuery, setHeaderQuery] = useState('');
+  const [headerQuery, setHeaderQuery] = useState(() => {
+    if (typeof window === 'undefined') return '';
+    return new URLSearchParams(window.location.search).get('q') || '';
+  });
   const [filterBrand, setFilterBrand] = useState('');
   const [filterModel, setFilterModel] = useState('');
   const [minPrice, setMinPrice] = useState('');
@@ -235,6 +239,13 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#111827]">
+      <SeoHead
+        activeNav={activeNav}
+        dealMode={dealMode}
+        selectedBrand={effectiveBrand}
+        selectedCar={detailCar}
+        cars={filteredCars}
+      />
       <Header
         activeNav={activeNav}
         onSelectNav={handleSelectNav}

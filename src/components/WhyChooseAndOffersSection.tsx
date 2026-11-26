@@ -189,7 +189,8 @@ export const WhyChooseAndOffersSection: React.FC<WhyChooseAndOffersSectionProps>
             <div className="sm:col-span-6 relative min-h-[200px] sm:min-h-[210px] bg-slate-900">
               <img
                 src={HERO_IMAGES.showroom}
-                alt="Good Deals Autos showroom exterior at dusk"
+                alt="Good Deals Autos showroom exterior at dusk in Accra"
+                loading="lazy"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
@@ -233,7 +234,8 @@ export const WhyChooseAndOffersSection: React.FC<WhyChooseAndOffersSectionProps>
           <div className="lg:col-span-5 bg-[#0D1016] text-white rounded-xl overflow-hidden relative flex items-center border border-slate-800 shadow-sm min-h-[210px]">
             <img
               src={HERO_IMAGES.headlight}
-              alt="Luxury sports car headlight"
+              alt="Luxury sports car headlight at Good Deals Autos"
+              loading="lazy"
               referrerPolicy="no-referrer"
               className="absolute right-0 top-0 h-full w-3/4 object-cover opacity-80"
             />
