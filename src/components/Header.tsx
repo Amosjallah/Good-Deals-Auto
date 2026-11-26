@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Phone,
   Search,
   ChevronDown,
   GitCompareArrows,
@@ -8,7 +7,6 @@ import {
   Headphones,
   Menu,
   X,
-  ArrowRight,
   KeyRound,
 } from 'lucide-react';
 import { TOP_BRANDS } from '../data/carsData';
@@ -64,29 +62,6 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="w-full relative z-40">
-      {/* Top Green Promotional Banner matching Good Deals Autos Logo */}
-      <div className="bg-gradient-to-r from-[#1A3D06] via-[#3A7910] to-[#58A618] text-white py-2 px-3 sm:px-4">
-        <div className="max-w-[1280px] mx-auto flex flex-wrap items-center justify-center gap-2 sm:gap-5 text-[11px] sm:text-sm font-bold tracking-wide">
-          <div className="flex items-center gap-2">
-            <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/15 border border-white/30 flex items-center justify-center shrink-0">
-              <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-white" />
-            </span>
-            <p className="text-center sm:text-left leading-snug">
-              <span className="text-white">BUY OR RENT CERTIFIED CARS IN GHANA — </span>
-              <span className="text-[#FACC15]">IGNITE YOUR JOURNEY</span>
-            </p>
-          </div>
-          <button
-            type="button"
-            onClick={onOpenContact}
-            className="bg-[#0F1419] hover:bg-black text-white border border-white/25 font-bold text-[11px] sm:text-xs px-3 py-1.5 rounded inline-flex items-center gap-1.5 transition-colors whitespace-nowrap shrink-0 cursor-pointer shadow-sm"
-          >
-            <span>Let&apos;s Talk Now</span>
-            <ArrowRight className="w-3.5 h-3.5 text-[#84CC16]" />
-          </button>
-        </div>
-      </div>
-
       {/* Main White Showroom Header */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-[1280px] mx-auto px-3 sm:px-4 py-2.5 flex flex-wrap lg:flex-nowrap items-center justify-between gap-3 lg:gap-8">
