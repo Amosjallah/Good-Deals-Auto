@@ -1,0 +1,6 @@
+{
+  "name": "DriveHub Car Showroom & Service",
+  "description": "Explore top car brands, new & certified pre-owned models, easy finance options, and expert auto servicing at DriveHub Car Showroom.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
